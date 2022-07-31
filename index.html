@@ -1,1 +1,55 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Henri Malahieude's Portfolio</title>
+        <style>
+            body{
+                font-family: Arial;
+                margin:0;
+                padding:none;
+                background-color: black;
+                text-emphasis-color: white;
+                text-decoration-color: white;
+                color: white;
+            }
+            .grid{
+                display:grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto;
+                row-gap: 5px;
+            }
+            .box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class = "box">
+                <a href="https://www.google.com">
+                    <img src="VisualMazeGenerator.png" alt="Visual Maze Generator">  
+                </a>
+            </div>
+            <div class = "box">
+                <a href="https://www.google.com">
+                    <img src="ChessGame.png" alt="Visual Maze Generator">
+                </a>
+            </div>
+            <div class = "box">TO DO</div> 
+            <div class = "box">TO DO</div> 
+            <div class = "box">TO DO</div> 
+            <div class = "box">TO DO</div> 
+            <div class = "box">TO DO</div> 
+            <div class = "box">TO DO</div> 
+        </div>
+    </body>
+</html>
