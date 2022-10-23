@@ -38,6 +38,23 @@
                 text-align: center;
                 font-size: 100%;
             }
+            .box .tooltiptext {
+                display: none;
+                width: 100px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 10;
+            }
+
+            .box:hover .tooltiptext {
+                display: block;
+            }
         </style>
     </head>
     <body>
@@ -48,11 +65,13 @@
                 <a href="https://henrimalahieude.github.io/VisualMazeGenerator/">
                     <img src="VisualMazeGenerator.png" alt="Visual Maze Generator">  
                 </a>
+                <span class="tooltiptext">(Requires WebGL)</span>
             </div>
             <div class = "box">
                 <a href="https://henrimalahieude.github.io/Chess/">
                     <img src="ChessGame.png" alt="Chess Game">
                 </a>
+                <span class="tooltiptext">(Requires WebGL)</span>
             </div>
             <div class = "box">
                 <a href="https://pkg.go.dev/github.com/HenriMalahieude/GoStructures">
@@ -63,6 +82,7 @@
                 <a href="https://henrimalahieude.github.io/GoPerlinNoise/">
                     <img src="perlin.png" alt="Perlin">
                 </a>
+                <span class="tooltiptext">(Requires WASM)</span>
             </div>
 
             <div class = "box"> <a href="https://github.com/HenriMalahieude"> <img src="wip.png" alt="WIP"> </a> </div>
