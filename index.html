@@ -38,9 +38,9 @@
                 text-align: center;
                 font-size: 100%;
             }
-            .box .tooltiptext {
-                display: none;
-                width: 100px;
+            .tooltiptext {
+                visibility: hidden;
+                width: 90px;
                 background-color: black;
                 color: #fff;
                 text-align: center;
@@ -52,8 +52,21 @@
                 z-index: 10;
             }
 
-            .box:hover .tooltiptext {
-                display: block;
+            .tooltiptext:before {
+                content: '';
+                position: absolute;
+                top: -9px;
+                left: calc(50% - 10px);
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid black;
+            }
+
+            .box:hover .tooltiptext, .box:focus .tooltiptext {
+                visibility: visible;
+                transform: translateY(100px); /* even better positioning */
             }
         </style>
     </head>
