@@ -1,8 +1,8 @@
 import {useState} from 'react';
 
-function CreateProjectBox({link, image, alt, tooltip}){
+function CreateProjectBox({link, image, alt, tooltip, kassign}){
 	return (
-		<div className = "box" key={alt}>
+		<div className = "box" key={kassign}>
 			<a href={link}>
 				<img src={image} alt={alt} />  
 			</a>
@@ -15,7 +15,7 @@ function FillWithWIP(count){
 	let content = [];
 
 	for (let i = 0; i < count; i++){
-		content.push(<CreateProjectBox link = "https://github.com/HenriMalahieude" image = "wip.png" alt = "WIP"/>);
+		content.push(<CreateProjectBox link = "https://github.com/HenriMalahieude" image = "wip.png" alt = "WIP" kassign={i}/>);
 	}
 
 	return content;
@@ -30,6 +30,7 @@ export default function MainPage(){
 			<title>{"Henri Malahieude's Portfolio"}</title>
 			<header className="header">{"Henri Malahieude's Portfolio"}</header>
 			<header className="header2">Click any button!</header>
+			<link rel="stylesheet" href="style.css"/>
 			<div className = "grid">
 				<CreateProjectBox 
 					link = "https://henrimalahieude.github.io/VisualMazeGenerator/"
