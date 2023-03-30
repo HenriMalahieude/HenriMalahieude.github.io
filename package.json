@@ -5,8 +5,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "next build; next export ./docs",
-    "lint": "next lint",
+    "build": "next build && next export -o ./docs",
     "dev": "next dev"
   },
   "devDependencies": {
