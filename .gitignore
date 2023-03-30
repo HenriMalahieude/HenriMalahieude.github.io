@@ -1,4 +1,8 @@
+#Folders relating to next framework
 .next/
 node_modules/
+src/
+
+#Specific waste of space not needed for a save
 .eslintrc.json
 package-lock.json
