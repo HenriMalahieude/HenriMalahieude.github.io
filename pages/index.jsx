@@ -2,11 +2,11 @@ import {useState} from 'react';
 
 function CreateProjectBox({link, image, alt, tooltip}){
 	return (
-		<div class = "box">
+		<div className = "box">
 			<a href={link}>
 				<img src={image} alt={alt} />  
 			</a>
-			{tooltip && <span class="tooltiptext">{tooltip}</span>}
+			{tooltip && <span className="tooltiptext">{tooltip}</span>}
 		</div>
 	);
 }
