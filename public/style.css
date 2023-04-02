@@ -1,3 +1,7 @@
+html{
+	scroll-behavior: smooth !important; /*This is for smooth transitions between tabs*/
+}
+
 body{
 	font-family: Arial;
 	margin:0;
@@ -6,38 +10,173 @@ body{
 	text-emphasis-color: white;
 	text-decoration-color: white;
 	color: white;
+	overflow-x: hidden;
 }
-.grid{
+
+/*Nav Bar*/
+.anchored{
+	position:fixed;
+	display:flex;
+	flex-direction: row;
+	top:0;
+	left:0;
+	width: 100%;
+	background-color: black;
+}
+
+.anchored div{
+	float: left;
+	display:flex;
+	justify-content: center;
+	flex-basis: 25%;
+}
+
+.anchored a{
+	text-align: center;
+	text-decoration: none;
+	padding: 2px;
+	border-radius: 6px;
+	color: #fff;
+	margin: 0 1em;
+}
+
+.anchored a:hover{
+	background-color: #fff;
+	color:black;
+}
+
+.allContainer{
+	margin-top: 30px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: first baseline;
+	width:400%;
+	scroll-behavior: smooth;
+}
+
+.tabContainer{
+	display:flex;
+	flex-direction: column;
+	flex-basis:150%;
+	justify-content: center;
+}
+.justifier{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*Title Stuff*/
+.header1{
+	text-align: center;
+	font-size: 200%;
+}
+
+.header2{
+	text-align: start;
+	text-decoration: underline;
+	font-size: 150%;
+}
+
+/*Home Me Image*/
+.meImage1{
+	width: 80%;
+	height: 80%;
+}
+
+/*Projects Tab*/
+.projectsContainer{
 	display:grid;
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 	row-gap: 10px;
+	column-gap: 10px;
 }
+
 .box{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-img{
+
+.box a{
+	position: relative;
+}
+
+.box .githubIcon{
+	position:absolute;
+	bottom:0;
+	right:0;
+	height: 25px;
+	width: 25px;
+	background: rgba(255, 255, 255, 0.25);
+	filter:invert(1);
+}
+
+.box .githubIcon:hover{
+	background: rgba(255, 255, 255, 1);
+}
+
+.projectImage{
 	width: 250px;
 	height: 250px;
 	object-fit: cover;
 }
-img.invert{
+
+.projectinvertImage{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
 	filter: invert(1);
-}   
-.header{
-	text-align: center;
-	font-size: 150%;
+	z-index: inherit;
 }
-.header2{
-	text-align: center;
-	font-size: 100%;
+
+.imageTitle{
+	position: absolute;
+	top: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 250px;
+	text-align:center;
 }
+
+/*List Items*/
+.listItem{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex-basis: 20%
+}
+
+.listItem .box{
+	flex-basis: 20%;
+}
+
+.listItem .separator{
+	flex-basis: 5%;
+}
+
+.listItem .txtContainer{
+	flex-basis: 75%;
+	display:flex;
+	flex-direction: column;
+}
+
+.listItem .txtContainer div{
+	text-align: start;
+	font-size: 125%;
+	inline-size: 75%;
+	overflow-wrap: break-word;
+}
+
+/*Tool Tip Stuff*/
 .tooltiptext {
 	visibility: hidden;
-	width: 90px;
+	width: 100px;
 	background-color: black;
+	outline-style: inset;
+	outline-color: #fff;
 	color: #fff;
 	text-align: center;
 	border-radius: 6px;
@@ -48,10 +187,14 @@ img.invert{
 	z-index: 10;
 }
 
+.tooltiptext a{
+	color: white;
+}
+
 .tooltiptext:before { /* Create the Little triangle above it */
 	content: '';
 	position: absolute;
-	top: -9px;
+	top: -10px;
 	left: calc(50% - 10px);
 	width: 0;
 	height: 0;
@@ -62,5 +205,5 @@ img.invert{
 
 .box:hover .tooltiptext, .box:focus .tooltiptext {
 	visibility: visible;
-	transform: translateY(100px); /* even better positioning */
+	transform: translateY(140px); /* even better positioning */
 }
