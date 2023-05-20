@@ -46,7 +46,7 @@ body{
 }
 
 .allContainer{
-	margin-top: 30px;
+	margin-top: 2vh;
 	display:flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -58,7 +58,7 @@ body{
 .tabContainer{
 	display:flex;
 	flex-direction: column;
-	flex-basis:150%;
+	flex-basis:100%;
 	justify-content: center;
 }
 .justifier{
@@ -81,6 +81,7 @@ body{
 
 /*Home Me Image*/
 .meImage1{
+	aspect-ratio: 1 / 1;
 	width: 80%;
 	height: 80%;
 }
@@ -119,14 +120,16 @@ body{
 }
 
 .projectImage{
-	width: 250px;
-	height: 250px;
+	max-height: 250px;
+	max-width: 25vw;
+	width: auto;
 	object-fit: cover;
 }
 
 .projectinvertImage{
-	width: 250px;
-	height: 250px;
+	max-height: 250px;
+	max-width: 25vw;
+	width: auto;
 	object-fit: cover;
 	filter: invert(1);
 	z-index: inherit;
@@ -137,8 +140,9 @@ body{
 	top: 0;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
-	width: 250px;
+	width: 100%;
 	text-align:center;
+	text-overflow: ellipsis;
 }
 
 /*List Items*/
