@@ -25,11 +25,10 @@ body{
 	top:0;
 	left:0;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .anchored div{
-	float: left;
 	display:flex;
 	justify-content: center;
 	flex-basis: 25%;
@@ -76,14 +75,14 @@ body{
 .header1{
 	text-align: center;
 	font-size: 200%;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
 }
 
 .header2{
 	text-align: start;
 	text-decoration: underline;
 	font-size: 150%;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
 }
 
 /*Home Me Image*/
@@ -177,7 +176,7 @@ body{
 .listItem .txtContainer div{
 	text-align: start;
 	font-size: 125%;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 	inline-size: 75%;
 	overflow-wrap: break-word;
 }
