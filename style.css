@@ -24,7 +24,7 @@ body{
 	flex-direction: row;
 	top:0;
 	left:0;
-	width: 100%;
+	width: 100vw;
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -55,7 +55,7 @@ body{
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: first baseline;
-	width:400%;
+	width:400vw;
 	scroll-behavior: smooth;
 }
 
