@@ -294,6 +294,7 @@ hr {
 /* Slide content styles */
 .slide-page {
 	margin: 50px 100px;
+	max-height: 100%;
 }
 
 .slide-title {
@@ -310,6 +311,11 @@ hr {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 50px;
+}
+
+.home-flex-img {
+	max-width: 100% !important;
+	width: 100%;
 }
 
 .home-flex-img {
@@ -445,4 +451,61 @@ hr {
 
 .link-item .link-txt p {
 	font-size: 20px;
+}
+
+/* Responsive media queries */
+
+/* General queries */
+@media only screen and (max-width: 900px) {
+	/* Note: the way titles are set up is sort of... trash */
+	/*       this is an easy fix for the time being.       */
+	.slide-title {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* Note: the way titles are set up is sort of... trash */
+	/*       this is an easy fix for the time being.       */
+	.slide-page {
+		margin: 50px 25px;
+	}
+}
+
+/* Home slide */
+@media only screen and (max-width: 1000px) {
+	.home-flex-img {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.home-flex-img {
+		width: 100%;
+	}
+
+	.home-flex-img-wrapper {
+		width: 50%;
+	}
+
+	.home-flex-wrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.home-flex-p {
+		font-size: 16px;
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.css-slider-wrapper {
+		overflow-y: auto;
+	}
 }
