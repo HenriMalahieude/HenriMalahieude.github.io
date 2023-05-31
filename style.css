@@ -5,6 +5,15 @@ body {
 	margin: 0;
 }
 
+.nav-mobile {
+	display: none !important;
+}
+
+.res-nav {
+	display: block !important;
+}
+
+
 /* Slider wrapper */
 .css-slider-wrapper {
 	display: block;
@@ -453,7 +462,9 @@ hr {
 	font-size: 20px;
 }
 
+/****************************/
 /* Responsive media queries */
+/****************************/
 
 /* General queries */
 @media only screen and (max-width: 900px) {
@@ -469,6 +480,27 @@ hr {
 	/*       this is an easy fix for the time being.       */
 	.slide-page {
 		margin: 50px 25px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-y: auto;
+	}
+
+	.css-slider-wrapper {
+		overflow-y: auto;
+	}
+}
+
+/* Navbar */
+@media only screen and (max-width: 600px) {
+	.nav-mobile {
+		display: block !important;
+	}
+
+	.res-nav {
+		display: none !important;
 	}
 }
 
@@ -500,12 +532,3 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	body {
-		overflow-y: auto;
-	}
-
-	.css-slider-wrapper {
-		overflow-y: auto;
-	}
-}
