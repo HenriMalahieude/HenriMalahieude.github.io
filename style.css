@@ -475,9 +475,7 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 600px) {
-	/* Note: the way titles are set up is sort of... trash */
-	/*       this is an easy fix for the time being.       */
+@media only screen and (max-width: 650px) {
 	.slide-page {
 		margin: 50px 25px;
 	}
@@ -529,6 +527,65 @@ hr {
 	.home-flex-p {
 		font-size: 16px;
 		margin-left: 0;
+	}
+}
+
+/* Projects slide */
+@media only screen and (max-width: 1345px) {
+	.projects-flex-item {
+		margin: 0 20px 20px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.projects-flex-item {
+		margin: 20px 10px;
+		width: 45%;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.projects-flex-item {
+		margin: 20px 10px;
+		width: 100%;
+	}
+}
+
+/* Publications slide */
+@media only screen and (max-width: 665px) {
+	.pub-flex-wrapper {
+		flex-direction: column;
+	}
+
+	.pub-img-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* Links slide */
+@media only screen and (max-width: 665px) {
+	.links-flex-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.link-txt {
+		margin: auto;
+		text-align: center;
+	}
+
+	.link-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.link-item a {
+		margin: 0;
+		width: 50%;
 	}
 }
 
