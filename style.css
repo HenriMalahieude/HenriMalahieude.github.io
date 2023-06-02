@@ -87,7 +87,7 @@ body {
 .slider .pub-flex-wrapper,
 .slider .links-flex-wrapper {
 	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
-	transition: transform 800ms, opacity 800ms;
+	transition: transform 800ms, opacity 400ms;
 	-webkit-transition-delay: 1s;
 	/* Safari */
 	transition-delay: 1s;
