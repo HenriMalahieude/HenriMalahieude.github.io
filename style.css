@@ -76,18 +76,18 @@ body {
 	text-transform: uppercase;
 	font-size: 45px;
 	line-height: 120%;
-	opacity: 0;
-	-webkit-transform: translateX(500px);
-	transform: translateX(500px);
+	opacity: 1;
+	/*-webkit-transform: translateX(500px);
+	transform: translateX(500px); Removed because I don't really like this*/
 }
 
 .slider .home-flex-wrapper,
 .slider .projects-flex-wrapper,
 .slider .pub-flex-wrapper,
 .slider .links-flex-wrapper {
-	opacity: 0;
-	-webkit-transform: translateX(-500px);
-	transform: translateX(-500px);
+	opacity: 1;
+	/*-webkit-transform: translateX(-500px);
+	transform: translateX(-500px); Removed because I don't really like this*/
 }
 
 .slider h2,
@@ -96,7 +96,7 @@ body {
 .slider .pub-flex-wrapper,
 .slider .links-flex-wrapper {
 	-webkit-transition: opacity 800ms, -webkit-transform 800ms;
-	transition: transform 800ms, opacity 800ms;
+	transition: transform 800ms, opacity 400ms;
 	-webkit-transition-delay: 1s;
 	/* Safari */
 	transition-delay: 1s;
