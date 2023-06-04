@@ -31,7 +31,6 @@ body {
 .slider {
 	width: 100%;
 	height: 100%;
-	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 1;
@@ -50,6 +49,8 @@ body {
 	transition: -webkit-transform 1600ms, transform 1600ms;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+	position: fixed !important;
+	overflow: auto;
 }
 
 /* Individual slide positions */
@@ -105,7 +106,8 @@ body {
 /* Slider pager */
 .slider-pagination {
 	/* Stick navbar to top */
-	position: sticky;
+	position: fixed !important;
+	top: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -302,8 +304,19 @@ hr {
 
 /* Slide content styles */
 .slide-page {
-	margin: 50px 100px;
+	padding: 50px 100px !important;
 	max-height: 100%;
+}
+
+.title-wrapper {
+	margin-top: 100px;
+	display: flex;
+	min-width: 100%;
+	width: 100%;
+	max-width: 100%;
+	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 .slide-title {
@@ -311,6 +324,20 @@ hr {
 	text-shadow: #000 1px 5px 10px;
 	font-size: 50px !important;
 	margin: 0;
+}
+
+.web-link {
+	color: #0088cc;
+	padding: 2px 3px;
+	border: 1px solid #0088cc;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+}
+
+.web-link:hover {
+	border:  solid #3046c0 1px;
 }
 
 
@@ -467,23 +494,21 @@ hr {
 /****************************/
 
 /* General queries */
-@media only screen and (max-width: 900px) {
-	/* Note: the way titles are set up is sort of... trash */
-	/*       this is an easy fix for the time being.       */
+@media only screen and (max-width: 550px) {
 	.slide-title {
-		display: none;
+		font-size: 40px !important;
 	}
 }
 
 @media only screen and (max-width: 650px) {
 	.slide-page {
-		margin: 50px 25px;
+		padding: 50px 25px !important;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	body {
-		overflow-y: auto;
+		overflow-y: hidden !important;
 	}
 
 	.css-slider-wrapper {
@@ -530,6 +555,19 @@ hr {
 	}
 }
 
+@media only screen and (max-width: 450px) {
+	.home-flex-img-wrapper {
+		width: 65%;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.home-flex-img-wrapper {
+		margin-top: 20px;
+	}
+}
+
 /* Projects slide */
 @media only screen and (max-width: 1345px) {
 	.projects-flex-item {
@@ -537,7 +575,7 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 	.projects-flex-item {
 		margin: 20px 10px;
 		width: 45%;
