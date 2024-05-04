@@ -133,7 +133,7 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
 }
 
-/* Slider pager arrow event */
+/* Slider pager arrow event 
 .slide-radio1:checked~.next .numb2,
 .slide-radio2:checked~.next .numb3,
 .slide-radio3:checked~.next .numb4,
@@ -142,7 +142,7 @@ body {
 .slide-radio4:checked~.previous .numb3 {
 	display: block;
 	z-index: 1;
-}
+} */
 
 /* Slider pager event */
 .slide-radio1:checked~.slider-pagination .page1,
