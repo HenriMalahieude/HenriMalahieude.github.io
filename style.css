@@ -13,6 +13,10 @@ body {
 	display: block !important;
 }
 
+img {
+	border-radius: 3px;
+}
+
 
 /* Slider wrapper */
 .css-slider-wrapper {
@@ -369,6 +373,10 @@ hr {
 	margin-left: 50px;
 	font-size: 20px;
 	text-shadow: #000 1px 5px 10px;
+}
+
+.home-flex-p ul {
+	color: white;
 }
 
 /* Projects slide */
