@@ -405,11 +405,28 @@ hr {
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.65);
 	z-index: 2;
+	border-radius: 2px;
 }
 
 .project-title h3 {
 	margin: 5px 0px 5px 10px;
 	text-shadow: #000 1px 5px 10px;
+}
+
+.projects-date {
+	display: flex;
+	text-align: center;
+	text-justify: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border-radius: 2px;
+
+	font-weight: bold;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	background-color: rgba(0, 0, 0, 0.85);
+	z-index: 2;
 }
 
 .project-title i {
