@@ -25,6 +25,7 @@ img {
 	background-image: url("img/background.jpg");
 	background-size: cover;
 	background-position: center;
+	background-color: black;
 	overflow: hidden;
 	position: fixed;
 	left: 0;
@@ -499,6 +500,7 @@ hr {
 	align-items: center;
 	color: white;
 	max-width: 100%;
+	justify-content: center;
 }
 
 .link-item a {
