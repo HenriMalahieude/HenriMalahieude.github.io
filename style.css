@@ -150,7 +150,7 @@ img {
   -ms-user-select: none; /* IE 10 and IE 11 */
 }
 
-/* Slider pager arrow event 
+/* Slider pager arrow event
 .slide-radio1:checked~.next .numb2,
 .slide-radio2:checked~.next .numb3,
 .slide-radio3:checked~.next .numb4,
@@ -472,7 +472,7 @@ hr {
 
 .pub-img {
 	width: 100%;
-	max-width: 30em;
+	max-width: 25em;
 }
 
 .pub-txt-wrapper {
